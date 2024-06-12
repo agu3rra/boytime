@@ -2,11 +2,11 @@ import pygame
 from pygame import Surface
 
 def main():
-    # Initialize Pygame
+    # Inicializa o jogo
     pygame.init()
 
-    # Set up the game window
-    screen: Surface = pygame.display.set_mode((800, 600))
+    # Configura a janela principal
+    screen: Surface = pygame.display.set_mode((1000, 900))
     pygame.display.set_caption("Boy Time")
 
     # Load the sprite image
@@ -15,8 +15,8 @@ def main():
 
     # Scale the sprite image
     original_width, original_height = sprite_image.get_size()
-    scaled_width = int(original_width * 0.25)
-    scaled_height = int(original_height * 0.25)
+    scaled_width = int(original_width * 0.20)
+    scaled_height = int(original_height * 0.20)
     sprite_image = pygame.transform.scale(
         sprite_image, (scaled_width, scaled_height))
 
