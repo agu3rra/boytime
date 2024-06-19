@@ -11,7 +11,7 @@ def main():
 
     # Load the sprite image
     sprite_image: Surface = pygame.image.load(
-        "boytime/assets/sprites/boytime/stand.png")
+        "boytime/assets/sprites/boytime/zombie.png")
 
     # Scale the sprite image
     original_width, original_height = sprite_image.get_size()
@@ -38,13 +38,13 @@ def main():
         # Move the sprite
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LEFT]:
-            sprite_rect.x -= 5
+            sprite_rect.x -= 1
         if keys[pygame.K_RIGHT]:
-            sprite_rect.x += 5
+            sprite_rect.x += 1
         if keys[pygame.K_UP]:
-            sprite_rect.y -= 5
+            sprite_rect.y -= 1
         if keys[pygame.K_DOWN]:
-            sprite_rect.y += 5
+            sprite_rect.y += 1
 
         # Clear the screen
         screen.fill((0, 0, 0))
